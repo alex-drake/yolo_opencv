@@ -7,12 +7,7 @@ The repo is set up good to go except for the YOLO weights. For this code, we're 
 ## Images
 To label images, please run `yolo_image.py`. If you find your images aren't being labelled then you may need to modify both the value for `threshold` and `min_confidence` - the current defaults for these are 0.3 and 0.5 respectively.
 
-<<<<<<< HEAD
 <img src="input/dog.jpg" alt="Goodboy somewhere" width="384" height="288" style="display:inline-block"/><img src="output/dog.png" alt="Goodboy there!" width="384" height="288" style="display:inline-block"/>
-=======
-<img src="input/dog.jpg" alt="Goodboy somewhere" width="384" height="288" style="display:inline-block"/>
-<img src="output/dog.png" alt="Goodboy there!" width="384" height="288" style="display:inline-block"/>
->>>>>>> master
 
 `yolo_image.py` will then detect all files in `input` with extension `'jpg','jpeg', 'bmp', 'png'`, and save the resulting detections in the `output` folder - these will be saved as `PNG`.
 
