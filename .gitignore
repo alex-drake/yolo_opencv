@@ -56,3 +56,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Yolo weights (Cos huge)
+yolo_cfg/yolov3.weights
+
+.DS_Store
