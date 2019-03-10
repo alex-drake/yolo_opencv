@@ -77,10 +77,9 @@ for file in file_names:
      
     		# filter out weak predictions where detected probability > minimum probability
     		if confidence > min_confidence:
-    			# scale the bounding box coordinates back relative to the
-    			# size of the image, keeping in mind that YOLO actually
-    			# returns the center (x, y)-coordinates of the bounding
-    			# box followed by the boxes' width and height
+    			# scale the bounding box coordinates relative to the
+    			# image size. Note YOLO returns the center (x, y)-coordinates of the bounding
+    			# box followed by the width and height
     			box = detection[0:4] * np.array([W, H, W, H])
     			(centerX, centerY, width, height) = box.astype("int")
      

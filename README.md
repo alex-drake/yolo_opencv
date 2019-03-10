@@ -12,4 +12,13 @@ To label images, please run `yolo_image.py`. If you find your images aren't bein
 `yolo_image.py` will then detect all files in `input` with extension `'jpg','jpeg', 'bmp', 'png'`, and save the resulting detections in the `output` folder - these will be saved as `PNG`.
 
 ## Videos
-Work in progress...
+To label a video, please run `yolo_video.py`. As with the above, you may need to change the threshold and condifence levels to suit your needs.
+
+`yolo_video.py` will detect all files in `input` with extension `'mp4'` and save the resulting video to the `output` folder with extension `'mp4'`. 
+Note that the code will only run detections on the first video file found (as otherwise it could run for a very long time).
+
+## Caveats
+If you are after something speedy then this is not for you - please consider the excellent [keras-yolo3](https://github.com/experiencor/keras-yolo3) from [Experiencor](https://github.com/experiencor) and consider running on a GPU rather than CPU.
+
+## Thanks
+This repo is based on the [tutorial](https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/) from Adrian Rosebrock on PyImageSearch. There are loads of really good tutorials on that site so I heavily suggest that you try them out.
